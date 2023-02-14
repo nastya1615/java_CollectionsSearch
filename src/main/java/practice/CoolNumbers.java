@@ -11,7 +11,7 @@ public class CoolNumbers {
 
         DecimalFormat dF = new DecimalFormat("00");
 
-
+        String coolNumber;
 
         String[] symbol = new String[]{"А", "В", "Е", "К", "М", "Н", "О", "Р", "С", "Т", "У", "Х"};
 
@@ -24,9 +24,10 @@ public class CoolNumbers {
                     for (String thirdletter : symbol) {
 
                         for (int region = 1; region <= 197; region++) {
-                            String coolNumber;
-                            coolNumber = firstLetter + number + number + number + secondaryLetter + thirdletter + dF.format(region);
 
+                            String reg = dF.format(region);
+
+                            coolNumber = firstLetter + number + number + number + secondaryLetter + thirdletter + reg;
                             gosNumber.add(coolNumber);
 
                         }
