@@ -1,7 +1,5 @@
 package practice;
 
-import org.checkerframework.checker.units.qual.A;
-
 import java.text.DecimalFormat;
 import java.util.*;
 

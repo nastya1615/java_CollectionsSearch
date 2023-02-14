@@ -1,8 +1,4 @@
 package practice;
-
-import org.checkerframework.checker.units.qual.A;
-import org.checkerframework.checker.units.qual.C;
-
 import java.util.ArrayList;
 import java.util.Collections;
 
