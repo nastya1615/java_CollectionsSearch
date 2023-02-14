@@ -11,21 +11,20 @@ public class CoolNumbers {
 
         DecimalFormat dF = new DecimalFormat("00");
 
-        String coolNumber;
 
-        String[] XYZ = new String[]{"А", "В", "Е", "К", "М", "Н", "О", "Р", "С", "Т", "У", "Х"};
 
-        for (String firstLetter : XYZ) {
+        String[] symbol = new String[]{"А", "В", "Е", "К", "М", "Н", "О", "Р", "С", "Т", "У", "Х"};
+
+        for (String firstLetter : symbol) {
 
             for (int number = 1; number <= 9; number++) {
 
-                for (String secondaryLetter : XYZ) {
+                for (String secondaryLetter : symbol) {
 
-                    for (String thirdletter : XYZ) {
+                    for (String thirdletter : symbol) {
 
                         for (int region = 1; region <= 197; region++) {
-
-
+                            String coolNumber;
                             coolNumber = firstLetter + number + number + number + secondaryLetter + thirdletter + dF.format(region);
 
                             gosNumber.add(coolNumber);
